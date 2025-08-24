@@ -1,0 +1,14 @@
+python Run/Runner.py \
+    --seed 42 \
+    --rm_ch_list 16 17 \
+    --nb_classes 4 \
+    --class_weight 1 1 1 1\
+    --fold_k 5 \
+    --batch_size 16 \
+    --max_epochs 100 \
+    --data_config data/dataConfigSubject.json \
+    --gpu 1 \
+    --model_explain "20240918 bias가 존재하는지 체크. 4개의 subject 모두로 train하기. 개체 분류하기. pretrained 불러와서 freeze후 진행. 100 epoch. class_weight = {0 : 1, 1: 1, 2 : 1, 3: 1}" \
+    --model_name "EEGNetPretrained" \
+    --checkpoint_path "model_save_stim_new2/checkpoint/checkpoint_240928_002311_fold5.ckpt" \
+    --monitor_value_name "val_loss"

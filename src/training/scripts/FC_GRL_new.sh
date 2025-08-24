@@ -1,0 +1,16 @@
+python Run/Runner_new.py \
+    --seed 42 \
+    --rm_ch_list 9 16 17 \
+    --class_weight 1 1 \
+    --fold_k 5 \
+    --batch_size 16 \
+    --max_epochs 50 \
+    --data_config data/test1/Day8/dataConfigStimGRLsubjectB112.json \
+    --gpu 0 \
+    --comment "test1_B112_001" \
+    --model_explain "20240927 GRL + target classifier + domain classifier. 100 epoch. class_weight = {0 : 1, 1: 1}" \
+    --model_name "EEGNetDomainAdaptation" \
+    --monitor_value_name "val_target_loss" \
+    --subject_usage "test1" \
+    --grl_lambda 0.01 \
+    --subject_name "B112"

@@ -1,0 +1,12 @@
+python Run/Runner.py \
+    --seed 42 \
+    --rm_ch_list 16 17 \
+    --class_weight 1 1 \
+    --fold_k 5 \
+    --batch_size 16 \
+    --max_epochs 100 \
+    --data_config data/dataConfigStim.json \
+    --gpu 1 \
+    --model_explain "20240918 bias가 존재하는지 체크. 4개의 subject 모두로 train하기. 100 epoch. class_weight = {0 : 1, 1: 1}" \
+    --model_name "EEGNet" \
+    --monitor_value_name "val_loss"
