@@ -42,13 +42,6 @@ src/
 └── config/                # Experiment configurations
 ```
 
-## Results
-
-Complete experimental results available in:
-- `ray_results_DMMR_*_test/`: Cross-subject LOSO experiments
-- `visualization_results/`: Cross-dataset t-SNE analysis
-- `results_DMMR_ECoG/`: Cross-modality experiments
-
 ## Citation
 
 ```bibtex
