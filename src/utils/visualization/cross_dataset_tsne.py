@@ -250,8 +250,8 @@ def plot_cross_dataset_tsne_comprehensive(
     day_names = {0: 'Day1 (before)', 1: 'Day8 (after)'}
     
     # Fixed colors for subjects
-    raw3_colors = ["#F48686", "#4ECDC4", '#869ECB']  # Red variations
-    raw56_colors = ['#F48686', '#4ECDC4', '#869ECB']  # Teal/green variations
+    raw3_colors = ["#A2E1DB", "#E6B89D", '#869ECB']  # Red variations
+    raw56_colors = ['#A2E1DB', '#E6B89D', '#869ECB']  # Teal/green variations
     
     # Get unique subjects
     unique_subjects = np.unique(subject_labels)
